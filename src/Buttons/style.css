@@ -1,0 +1,35 @@
+.buttons__button {
+    background-color: white;
+    color: hsl(180, 100%, 25%);
+    text-align: center;
+    border: none;
+    max-height: 40px;
+    font-size: 15px;
+
+}
+
+.buttons__button:hover {
+    color: hsl(180, 100%, 35%);
+}
+
+.buttons__button:active {
+    color: hsl(180, 100%, 45%);
+    border: 2px solid black;
+    margin: -2px;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+}
+
+.buttons__button:disabled {
+    color: rgba(128, 128, 128, 0.39);
+}
+
+@media (max-width: 767px) {
+    .buttons__button {
+        width: 100%;
+    }
+}
