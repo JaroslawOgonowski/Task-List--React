@@ -19,3 +19,13 @@
 .section__body {
     padding: 20px;
 }
+
+@media (max-width: 767px) {
+    .section__header {
+        display: flex;
+        flex-direction: column;
+    }
+    .section__title{
+       width: 100%;
+    }
+}

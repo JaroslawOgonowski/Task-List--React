@@ -29,7 +29,8 @@
 }
 
 @media (max-width: 767px) {
-    .buttons__button {
-        width: 100%;
+    .buttons {
+        display: flex;
+        flex-direction: column;
     }
 }
