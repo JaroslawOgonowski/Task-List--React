@@ -4,9 +4,10 @@ const Tasks = (props) => (
     <ul className="list">
         {props.tasks.map(task => (
             <li
+                key={task.id}
                 className={`
                 list__itemContainer 
-                ${task.done && props.hideDoneTask
+                ${task.done && props.hideDone
                         ? "list__itemContainer--hidden"
                         : ""
                     }

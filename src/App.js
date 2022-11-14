@@ -4,7 +4,7 @@ import Buttons from "./Buttons";
 import Section from "./Section";
 import Header from "./Header"
 import Container from "./Container"
-let hideDoneTask = false;
+let hideDone = false;
 const tasks = [
   { id: 1, content: "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa", done: true },
   { id: 2, content: "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb", done: false },
@@ -20,8 +20,8 @@ function App() {
         />
         <Section
           title="Lista zadań"
-          content={<Tasks tasks={tasks} hideDoneTask={hideDoneTask} />}
-          extraHeaderContent={<Buttons tasks={tasks} hideDoneTask={hideDoneTask} />}
+          content={<Tasks tasks={tasks} hideDone={hideDone} />}
+          extraHeaderContent={<Buttons tasks={tasks} hideDone={hideDone} />}
         />
       </Container>
     </body>

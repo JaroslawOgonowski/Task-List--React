@@ -14,3 +14,8 @@ https://jaroslawogonowski.github.io/task-list/
 
 
 Deploy version here: https://github.com/JaroslawOgonowski/Task-List--react/tree/gh-pages
+
+Technologies:
+- ES6
+- create-react-app
+- webpack
