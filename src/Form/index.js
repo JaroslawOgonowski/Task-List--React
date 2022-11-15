@@ -1,12 +1,13 @@
 import { useState } from "react";
 import "./style.css";
 
-const Form = ({addNewTask}) => {
+const Form = ({ addNewTask }) => {
     const [newTaskContent, setNewTaskContent] = useState("");
-
     const onFormSubmit = (event) => {
         event.preventDefault();
-        addNewTask(newTaskContent.trim());
+        if (newTaskContent === "") {
+            return
+        } else addNewTask(newTaskContent.trim());
         setNewTaskContent("");
     };
 
@@ -15,8 +16,8 @@ const Form = ({addNewTask}) => {
             <input
                 value={newTaskContent}
                 autofocus className="form__input"
-                placeholder="Co jest do zrobienia?" 
-                onChange={({target})=> setNewTaskContent(target.value)}/>
+                placeholder="Co jest do zrobienia?"
+                onChange={({ target }) => setNewTaskContent(target.value)} />
             <button className="form__button">Dodaj zadanie</button>
         </form>
     );
