@@ -5,6 +5,7 @@
     border: none;
     max-height: 40px;
     font-size: 15px;
+    transition: 1s;
 }
 
 .buttons__button:hover {
