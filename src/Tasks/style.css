@@ -44,6 +44,7 @@
 
 .list__button:hover {
     background-color: rgb(8, 128, 8);
+    cursor: pointer;
 }
 
 .list__button--red {
@@ -52,6 +53,7 @@
 
 .list__button--red:hover {
     background-color: red;
+    cursor: pointer;
 }
 
 .list__button--red:active {
