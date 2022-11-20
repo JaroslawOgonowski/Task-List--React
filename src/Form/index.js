@@ -15,7 +15,7 @@ const Form = ({ addNewTask }) => {
         <form className="form" onSubmit={onFormSubmit}>
             <input
                 value={newTaskContent}
-                autofocus className="form__input"
+                autoFocus className="form__input"
                 placeholder="Co jest do zrobienia?"
                 onChange={({ target }) => setNewTaskContent(target.value)} />
             <button className="form__button">Dodaj zadanie</button>
