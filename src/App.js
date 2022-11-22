@@ -6,11 +6,6 @@ import Header from "./Header";
 import Container from "./Container"
 import { useState, useEffect } from "react";
 
-const defaultTasks = [
-  { id: 1, content: "Zrobić pracę domową", done: true },
-  { id: 2, content: "Kupić masło", done: false },
-];
-
 function App() {
 
   const setLocalStorageTasks = () => {
