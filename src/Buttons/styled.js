@@ -29,8 +29,10 @@ export const Button = styled.button`
         border: 1px solid black;
         margin: -1px;
     }
-    
-    ${({ disabled }) => disabled && css`
+
+    &&{
+        ${({ disabled }) => disabled && css`
         color: rgba(128, 128, 128, 0.39);
     `}
+    }
 `;
