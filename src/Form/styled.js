@@ -1,6 +1,6 @@
 import styled, { css } from "styled-components";
 
-export const FormContent = styled.form`
+export const StyledForm = styled.form`
     display: grid;
     grid-template-columns: 1fr auto;
     grid-gap: 10px;
@@ -10,7 +10,7 @@ export const FormContent = styled.form`
         flex-direction: column;
     }
 `;
-export const FormButton = styled.button`
+export const Button = styled.button`
     height: 50px;
     border: none;
     margin-left: 10px;
@@ -32,7 +32,7 @@ export const FormButton = styled.button`
         margin: auto;
     }
 `;
-export const FormInput = styled.input`
+export const Input = styled.input`
     height: 50px;
     display: inline-block;
     padding: 10px;

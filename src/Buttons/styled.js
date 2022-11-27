@@ -1,6 +1,6 @@
 import styled, { css } from "styled-components";
 
-export const ButtonsDiv = styled.div`
+export const StyledButtons = styled.div`
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 10px;

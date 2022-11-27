@@ -1,8 +1,8 @@
-import { ButtonsDiv, Button } from "./styled";
+import { StyledButtons, Button } from "./styled";
 
 const Buttons = ({ tasks, hideDone, toggleHideDone, setAllDone }) => (
     tasks.length > 0 && (
-        <ButtonsDiv>
+        <StyledButtons>
             <Button
                 onClick= {toggleHideDone}
                 >
@@ -14,7 +14,7 @@ const Buttons = ({ tasks, hideDone, toggleHideDone, setAllDone }) => (
                 disabled={tasks.every(({ done }) => done)}>
                 Ukończ wszystkie
             </Button>
-        </ButtonsDiv>)
+        </StyledButtons>)
 );
 
 export default Buttons;
