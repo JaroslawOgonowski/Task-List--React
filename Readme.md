@@ -19,3 +19,4 @@ Technologies:
 - ES6
 - create-react-app
 - webpack
+- redux
