@@ -7,8 +7,8 @@ export const StyledSection = styled.section`
 `;
 
 export const Header = styled.header`
-    font-size: 14px;
-    padding: 10px;
+    font-size: 12px;
+    padding-left: 10px;
     margin: 0;
     border-bottom: 1px solid #ddd;
     display: grid;
