@@ -7,17 +7,17 @@ import { useSelector } from "react-redux";
 import { getTaskById } from "../tasksSlice";
 
 function TaskPage() {
-    const {id} = useParams();
+    const { id } = useParams();
     const task = useSelector(state => getTaskById(state, id));
 
     return (
         <Container>
             <Header title="Szczegóły zadania" />
             <Section
-                title={task ? task.content : "Nie znaleziono zadania :("}
-                content={<>ID zadania: {task.id}
-               <p/><strong>Ukończono:</strong> {task.done ? "Tak" : "Nie"}</>}
-                    
+                title={task ? task.content : "Nie znaleziono zadania"}
+                content={!!task && (<>ID zadania: {task.id}
+                    <p /><strong>Ukończono:</strong> {task.done ? "Tak" : "Nie"}</>)}
+
             />
         </Container>
     );
