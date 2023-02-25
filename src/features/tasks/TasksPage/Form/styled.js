@@ -32,13 +32,3 @@ export const Button = styled.button`
         margin: auto;
     }
 `;
-export const Input = styled.input`
-    height: 50px;
-    display: inline-block;
-    padding: 10px;
-    border-color: lightgray;
-    border-style: solid;
-    @media (max-width: 767px) {
-        width: 100%;
-    }
-`;

@@ -1,5 +1,10 @@
 import styled, { css } from "styled-components";
 
+export const Wrapper = styled.div`
+ display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 10px;
+`;
 export const StyledButtons = styled.div`
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -8,12 +13,11 @@ export const StyledButtons = styled.div`
 export const Button = styled.button`
     background-color: white;
     color: hsl(180, 100%, 25%);
-    text-align: center;
     border: none;
     max-height: 40px;
     font-size: 15px;
     transition: color 0.5s;
-
+   
     @media (max-width: 767px) {
         display: flex;
         flex-direction: column;
