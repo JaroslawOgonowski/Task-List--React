@@ -16,8 +16,10 @@ padding: 20px;
 font-weight: 700;
 transition: 1s;
 &:hover{
-    transform: scale(1.2);
+    transform: scale(1.1);
     cursor: pointer;
+    color: hsl(180, 100%, 35%);
+    border-color: hsl(180, 100%, 45%);
 }
 
 `

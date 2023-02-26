@@ -26,7 +26,6 @@ color: white;
 text-decoration: none;
 margin: 20px;
 
-
 &.${activeClassName} {
     font-weight: bold;
     font-size: 110%;
