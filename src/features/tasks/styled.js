@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import styled, { css } from "styled-components";
 
 export const Wrapper = styled.div`
@@ -39,4 +40,14 @@ export const Button = styled.button`
         color: rgba(128, 128, 128, 0.39);
     `}
     }
+`;
+
+export const StyledLink = styled(Link)`
+color: teal;
+text-decoration: none;
+cursor: pointer;
+transition: 1s;
+&:hover{
+    color:hsl(180, 100%, 35%);
+}
 `;

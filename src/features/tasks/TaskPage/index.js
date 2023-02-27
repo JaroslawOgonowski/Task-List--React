@@ -5,6 +5,8 @@ import Container from "../../../common/Container";
 import { useParams } from "react-router-dom";
 import { useSelector } from "react-redux";
 import { getTaskById } from "../tasksSlice";
+import { StyledLink } from "../styled";
+
 
 function TaskPage() {
     const { id } = useParams();
@@ -16,7 +18,9 @@ function TaskPage() {
             <Section
                 title={task ? task.content : "Nie znaleziono zadania"}
                 content={!!task && (<>ID zadania: {task.id}
-                    <p /><strong>Ukończono:</strong> {task.done ? "Tak" : "Nie"}</>)}
+                    <p /><strong>Ukończono:</strong> {task.done ? "Tak" : "Nie"}
+                    <p/> Powrót do listy zadań: {" "}
+                    <StyledLink to="/zadania">Twoja lista zadań</StyledLink></>)}
             />
         </Container>
     );
