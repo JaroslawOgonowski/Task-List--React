@@ -10,6 +10,11 @@ export const StyledButtons = styled.div`
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 10px;
+    
+    @media (max-width: 767px) {
+        display: grid;
+        grid-template-columns: auto;  
+    }
 `;
 export const Button = styled.button`
     background-color: white;
@@ -19,11 +24,6 @@ export const Button = styled.button`
     font-size: 15px;
     transition: color 0.5s;
    
-    @media (max-width: 767px) {
-        display: flex;
-        flex-direction: column;
-        }
-
     &:hover{
         color: hsl(180, 100%, 35%);
         cursor: pointer;
