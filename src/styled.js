@@ -2,13 +2,11 @@ import { NavLink } from "react-router-dom";
 import styled from "styled-components";
 const activeClassName = "active"
 
-export const Navigation = styled.nav`
-`;
-
 export const NavList = styled.ul`
 background-color: teal;
 list-style: none;
 display: flex;
+gap: 50px;
 justify-content: center;
 line-height: 1,5;
 width: 100%;
@@ -28,5 +26,12 @@ margin: 20px;
     font-weight: bold;
     font-size: 110%;
 }
+`;
+export const StyledItem = styled.li`
+transition:1s;
+&:hover{
+    transform: scale(1.4);
+    cursor: pointer;
+    }
 `;
 
