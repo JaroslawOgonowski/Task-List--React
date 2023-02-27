@@ -1,30 +1,28 @@
 import { useHistory, useLocation } from "react-router-dom";
 import Input from "../../Input";
 import searchParamQueryName from "../searchParamQueryName";
+import { useQueryParameters, useReplaceQueryParameters } from "./queryParameters";
 import { Wrapper } from "./styled";
 
 export default () => {
-    const location = useLocation();
-    const history = useHistory();
-    const query = (new URLSearchParams(location.search)).get(searchParamQueryName);
+    const query = useQueryParameters(searchParamQueryName);
+    const replaceQueryParameters = useReplaceQueryParameters();
+
 
     const onInputChange = ({ target }) => {
-        const searchParams = new URLSearchParams(location.search);
-        if (target.value.trim() === "") {
-            searchParams.delete(searchParamQueryName);
-        } else {
-            searchParams.set(searchParamQueryName, target.value);
-        }
-        history.push(`${location.pathname}?${searchParams.toString()}`);
+        replaceQueryParameters({
+            key: searchParamQueryName,
+            value: target.value.trim() !== "" ? target.value : undefined,
+        });
     };
 
     return (
         <Wrapper>
             <Input
-            placeholder="Filtruj zadania"
-            value={query || ""}
-            onChange={onInputChange}
-        />
+                placeholder="Filtruj zadania"
+                value={query || ""}
+                onChange={onInputChange}
+            />
         </Wrapper>
     )
 };
