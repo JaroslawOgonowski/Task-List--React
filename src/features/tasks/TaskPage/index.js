@@ -17,10 +17,17 @@ function TaskPage() {
             <Header title="Szczegóły zadania" />
             <Section
                 title={task ? task.content : "Nie znaleziono zadania"}
-                content={!!task && (<>ID zadania: {task.id}
-                    <p /><strong>Ukończono:</strong> {task.done ? "Tak" : "Nie"}
-                    <p/> Powrót do listy zadań: {" "}
-                    <StyledLink to="/zadania">Twoja lista zadań</StyledLink></>)}
+                content=
+                {!!task && (
+                    <>
+                        ID zadania: {task.id}
+                        <p><strong>Ukończono:</strong> {task.done ? "Tak" : "Nie"}</p>
+                        <p>
+                            Powrót do listy zadań: {" "}
+                            <StyledLink to="/zadania">Twoja lista zadań</StyledLink>
+                        </p>
+                    </>
+                )}
             />
         </Container>
     );

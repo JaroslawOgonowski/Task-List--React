@@ -8,7 +8,7 @@ export const StyledSection = styled.section`
 
 export const Header = styled.header`
     font-size: 12px;
-    padding-left: 10px;
+    padding: 20px;
     margin: 0;
     border-bottom: 1px solid #ddd;
     display: grid;
