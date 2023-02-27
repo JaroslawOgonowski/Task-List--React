@@ -1,10 +1,20 @@
 import styled, { css } from "styled-components";
+import { Link } from "react-router-dom";
 
 export const List = styled.ul`
     list-style: none;
     padding-left: 0px;
     margin: 0;
 `;
+export const StyledLink = styled(Link)`
+color: teal;
+text-decoration: none;
+cursor: pointer;
+transition: 1s;
+&:hover{
+    color:hsl(180, 100%, 35%);
+}
+`
 
 export const Item = styled.li`
     display: grid;
@@ -13,7 +23,6 @@ export const Item = styled.li`
     grid-gap: 10px;
     border-bottom: 1px solid #ddd;
     align-items: center;
-
     ${({ hidden }) => hidden && css`
         display: none;
     `}
