@@ -17,6 +17,7 @@ Deploy version here: https://github.com/JaroslawOgonowski/Task-List--react/tree/
 
 Technologies:
 - ES6
+- custom hooks
 - create-react-app
 - webpack
 - redux

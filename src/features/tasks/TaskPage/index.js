@@ -17,7 +17,6 @@ function TaskPage() {
                 title={task ? task.content : "Nie znaleziono zadania"}
                 content={!!task && (<>ID zadania: {task.id}
                     <p /><strong>Ukończono:</strong> {task.done ? "Tak" : "Nie"}</>)}
-
             />
         </Container>
     );

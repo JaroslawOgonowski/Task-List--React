@@ -15,11 +15,11 @@ function TasksPage() {
       <Section
         title="Dodaj nowe zadanie"
         content={<Form />}
-        extraHeaderContent={<ExampleTasksButton/>}
+        extraHeaderContent={<ExampleTasksButton />}
       />
       <Section
         title="Wyszukiwarka zadań"
-        content={<Search/>}
+        content={<Search />}
       />
       <Section
         title="Lista zadań"

@@ -16,7 +16,7 @@ export default () => (
                 </li>
             </NavList>
             <Switch>
-            <Route path="/zadania/:id">
+                <Route path="/zadania/:id">
                     <TaskPage />
                 </Route>
                 <Route path="/zadania">
@@ -26,7 +26,7 @@ export default () => (
                     <AuthorPage />
                 </Route>
                 <Route path="/">
-                   <Redirect to="/zadania" />
+                    <Redirect to="/zadania" />
                 </Route>
             </Switch>
         </Navigation>

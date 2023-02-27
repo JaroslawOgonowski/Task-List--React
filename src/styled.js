@@ -3,7 +3,6 @@ import styled from "styled-components";
 const activeClassName = "active"
 
 export const Navigation = styled.nav`
-
 `;
 
 export const NavList = styled.ul`
@@ -18,8 +17,7 @@ padding: 20px;
 align-items: center;
 `;
 
-
-export const StyledNavLink = styled(NavLink).attrs(()=>({
+export const StyledNavLink = styled(NavLink).attrs(() => ({
     activeClassName,
 }))`
 color: white;

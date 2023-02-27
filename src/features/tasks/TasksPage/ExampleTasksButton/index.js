@@ -1,7 +1,6 @@
-
 import { fetchExampleTasks, selectLoading } from "../../tasksSlice";
 import { useDispatch, useSelector } from "react-redux";
-import { Button, Wrapper,  } from "../Buttons/styled";
+import { Button, Wrapper, } from "../../styled";
 
 const ExampleTasksButton = () => {
     const dispatch = useDispatch();
@@ -10,7 +9,7 @@ const ExampleTasksButton = () => {
     return (
         <Wrapper>
             <Button
-                onClick={()=>dispatch(fetchExampleTasks())}
+                onClick={() => dispatch(fetchExampleTasks())}
                 disabled={Loading}
             >
                 {Loading

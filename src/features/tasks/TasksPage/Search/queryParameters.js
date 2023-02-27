@@ -10,17 +10,14 @@ export const useQueryParameters = (key) => {
 export const useReplaceQueryParameters = () => {
     const location = useLocation();
     const history = useHistory();
-
     const replaceQueryParameters = ({ key, value }) => {
-    const searchParams = new URLSearchParams(location.search);
-
-    if (value === undefined) {
-        searchParams.delete(key);
-    } else {
-        searchParams.set(key, value);
-    }
-
-    history.push(`${location.pathname}?${searchParams.toString()}`);
-};
-return replaceQueryParameters;
+        const searchParams = new URLSearchParams(location.search);
+        if (value === undefined) {
+            searchParams.delete(key);
+        } else {
+            searchParams.set(key, value);
+        }
+        history.push(`${location.pathname}?${searchParams.toString()}`);
+    };
+    return replaceQueryParameters;
 };
