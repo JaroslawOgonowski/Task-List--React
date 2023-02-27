@@ -10,16 +10,20 @@ justify-content: center;
 
 export const MyPage = styled.a`
 text-decoration: none;
-border: 2px solid teal;
-color: teal;
-padding: 20px;
-font-weight: 700;
-transition: 1s;
-&:hover{
-    transform: scale(1.1);
-    cursor: pointer;
-    color: hsl(180, 100%, 35%);
-    border-color: hsl(180, 100%, 45%);
-}
-
-`
+    background-color: teal;
+    color: white;
+    padding: 20px;
+    transition: 1s;
+    &:hover{
+        background-color: hsl(180, 100%, 30%);
+        transform: scale(1.05);
+        cursor: pointer;
+    }
+    &:active{
+        background-color: hsl(180, 100%, 35%);
+    }
+    @media (max-width: 767px) {
+        width: 100%;
+        margin: auto;
+    }
+`;
