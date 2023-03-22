@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import styled, { css } from "styled-components";
 
 export const Wrapper = styled.div`
- display: grid;
+    display: grid;
     grid-template-columns: 1fr;
     grid-gap: 10px;
 `;
@@ -38,16 +38,16 @@ export const Button = styled.button`
     &&{
         ${({ disabled }) => disabled && css`
         color: rgba(128, 128, 128, 0.39);
-    `}
-    }
+    `};
+    };
 `;
 
 export const StyledLink = styled(Link)`
-color: teal;
-text-decoration: none;
-cursor: pointer;
-transition: 1s;
-&:hover{
-    color:hsl(180, 100%, 35%);
-}
+    color: teal;
+    text-decoration: none;
+    cursor: pointer;
+    transition: 1s;
+    &:hover{
+        color:hsl(180, 100%, 35%);
+};
 `;
