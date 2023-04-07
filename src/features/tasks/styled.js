@@ -14,7 +14,7 @@ export const StyledButtons = styled.div`
     @media (max-width: 767px) {
         display: grid;
         grid-template-columns: auto;  
-    }
+    };
 `;
 export const Button = styled.button`
     background-color: white;
@@ -27,13 +27,13 @@ export const Button = styled.button`
     &:hover{
         color: hsl(180, 100%, 35%);
         cursor: pointer;
-    }
+    };
 
     &:active{
         color: hsl(180, 100%, 45%);
         border: 1px solid black;
         margin: -1px;
-    }
+    };
 
     &&{
         ${({ disabled }) => disabled && css`
@@ -47,7 +47,8 @@ export const StyledLink = styled(Link)`
     text-decoration: none;
     cursor: pointer;
     transition: 1s;
+    
     &:hover{
         color:hsl(180, 100%, 35%);
-};
+    };
 `;

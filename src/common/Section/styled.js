@@ -19,12 +19,13 @@ export const Header = styled.header`
     @media (max-width: 767px) {
         display: flex;
         flex-direction: column;
-    }
+    };
 `;
 export const Title = styled.h2`
+    
     @media (max-width: 767px) {
         width: 100%;
-    }
+    };
 `;
 export const Content = styled.div`
     padding: 20px;
