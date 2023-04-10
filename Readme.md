@@ -9,15 +9,25 @@ during the earlier stages, one of the tasks was to recreate the appearance and f
 Now it's time to move the project into the new fascinating world of React.
 
 
-Previous version running on "raw" html, js and css available here:
+Previous version running on html, js and css available here:
 https://jaroslawogonowski.github.io/task-list/
 
+## Features
 
-Deploy version here: https://github.com/JaroslawOgonowski/Task-List--react/tree/gh-pages
-
-Technologies:
-- ES6
-- custom hooks
-- create-react-app
-- webpack
-- redux
+- Create react app
+- React-router-dom
+![Main page](./public/readmeImages/readmeMain.jpg)
+![Author page](./public/readmeImages/readmeAuthor.jpg)
+![Detail page](./public/readmeImages/readmeTaskDetail.jpg)
+- useHistory, useLocation
+![Search](./public/readmeImages/readmeSearch.jpg)
+- ES6 (arrow function, promises)
+- nanoId
+- useDispatch, useSelector
+- useRef, useState, useEffect
+- @reduxjs/toolkit (state, configureStore)
+- styled-components
+- @redux-saga
+- async, await
+- fetch
+- local storage
